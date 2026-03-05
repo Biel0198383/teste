@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Video Factory</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🎬 Video Factory</h1>
+
+<form id="form">
+
+<input type="file" name="videos" multiple><br><br>
+
+<textarea name="text" placeholder="Texto da narração"></textarea><br><br>
+
+<select name="voice">
+<option value="pt-BR-FranciscaNeural">Francisca</option>
+<option value="pt-BR-AntonioNeural">Antonio</option>
+<option value="en-US-JennyNeural">Jenny</option>
+</select>
+
+<br><br>
+
+<select name="resolution">
+<option value="">Manter resolução</option>
+<option value="1080x1920">Vertical 1080x1920</option>
+<option value="1920x1080">Horizontal 1920x1080</option>
+</select>
+
+<br><br>
+
+<button type="submit">Processar Vídeos</button>
+
+</form>
+
+<div id="results"></div>
+
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
